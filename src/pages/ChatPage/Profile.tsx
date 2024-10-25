@@ -10,7 +10,7 @@ export default function Profile() {
                         <AvatarImage src="https://placehold.co/400" width={40} className="rounded-full" />
                         <AvatarFallback>CN</AvatarFallback>
                     </Avatar>
-                    <div>
+                    <div className="text-start">
                         <p className="font-semibold">Profile Name</p>
                         <p className="text-xs">@longlt201203</p>
                     </div>

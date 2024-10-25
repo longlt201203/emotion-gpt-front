@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
 import ChatPage from "./pages/ChatPage";
-import Page from "./pages/v2";
+import LoginPageV2 from "./pages/LoginPageV2";
 
 const router = createBrowserRouter([
     {
@@ -12,13 +12,13 @@ const router = createBrowserRouter([
                 element: <ChatPage/>
             },
             {
-                path: "v2",
-                element: <Page/>
-            },
-            {
                 path: "login",
                 element: <LoginPage/>
             },
+            {
+                path: "login-v2",
+                element: <LoginPageV2/>
+            }
         ]
     }
 ]);
