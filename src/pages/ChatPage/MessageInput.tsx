@@ -36,10 +36,6 @@ export default function MessageInput() {
         }
     }, [message]);
 
-    useEffect(() => {
-        console.log("Count: ", images.length)
-    }, [images]);
-
     return (
         <div className="p-4">
             <div className="flex flex-col gap-2">
