@@ -4,7 +4,6 @@ import ChatPage from "./pages/ChatPage";
 import HomePage from "./pages/Home";
 import RootProvider from "./providers/RootProvider";
 import ErrorPage from "./pages/ErrorPage";
-import AuthProvider from "./providers/AuthProvider";
 
 const router = createBrowserRouter([
   {
@@ -14,13 +13,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <AuthProvider />,
-        children: [
-          {
-            path: "",
-            element: <ChatPage />
-          }
-        ]
+        element: <ChatPage />,
       },
       {
         path: "login",
@@ -28,16 +21,12 @@ const router = createBrowserRouter([
       },
       {
         path: "home",
-        element: <HomePage />
+        element: <HomePage />,
       },
       {
         path: "error/:code",
-        element: <ErrorPage />
+        element: <ErrorPage />,
       },
-      {
-        path: "",
-        element: <ErrorPage status={404} />
-      }
     ],
   },
 ]);
